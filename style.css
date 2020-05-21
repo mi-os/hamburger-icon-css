@@ -1,0 +1,60 @@
+.box-check {
+  display: none;
+}
+
+.box-check:checked ~ .check-btn::before {
+  border-bottom: 4px solid black;
+  width: 100%;
+  -webkit-transform-origin: -8px 25px;
+          transform-origin: -8px 25px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: transparent 0 0 0;
+          box-shadow: transparent 0 0 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.box-check:checked ~ .check-btn::after {
+  border-bottom: 4px solid black;
+  width: 100%;
+  -webkit-transform-origin: -8px -22px;
+          transform-origin: -8px -22px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.check-btn {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin: 80px auto auto auto;
+}
+
+.check-btn::before {
+  position: absolute;
+  border-bottom: 4px solid black;
+  width: 100%;
+  left: 0;
+  content: '';
+  -webkit-box-shadow: 0 48px 0 0 black;
+          box-shadow: 0 48px 0 0 black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.check-btn::after {
+  position: absolute;
+  border-bottom: 4px solid black;
+  width: 100%;
+  margin-top: 96px;
+  left: 0;
+  content: '';
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/*# sourceMappingURL=style.css.map */
